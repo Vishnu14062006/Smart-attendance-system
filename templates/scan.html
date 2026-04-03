@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan QR</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Scanner</h2>
+        <p>Student ID / Scan Result:</p>
+        <input type="text" id="scanInput" placeholder="Simulate scanned ID here">
+        <br>
+        <!-- Calls JS function -->
+        <button onclick="markAttendance()">Mark Attendance</button>
+
+        <p id="message" style="font-weight: bold;"></p>
+
+        <button onclick="window.location.href='dashboard'" style="background-color: #007bff;">Back</button>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+
+</html>

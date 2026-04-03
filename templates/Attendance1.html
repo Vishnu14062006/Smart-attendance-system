@@ -1,0 +1,44 @@
+<<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance</title>
+    <link rel="stylesheet" href="/static/style1.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Attendance Records</h2>
+
+        <table class="attendance-table">
+            <tr>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>John Doe</td>
+                <td>2026-03-31</td>
+                <td class="present">Present</td>
+            </tr>
+
+            <tr>
+                <td>Jane Smith</td>
+                <td>2026-03-31</td>
+                <td class="present">Present</td>
+            </tr>
+
+            <tr>
+                <td>Mike Ross</td>
+                <td>2026-03-31</td>
+                <td class="absent">Absent</td>
+            </tr>
+        </table>
+
+        <button onclick="window.location.href='/dashboard'" 
+                style="background:#007bff;">
+            Back to Dashboard
+        </button>
+    </div>
+</body>
+</html>

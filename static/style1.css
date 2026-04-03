@@ -1,0 +1,118 @@
+ /* ===== BODY (FULL PAGE CENTER) ===== */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* ===== CARD (LOGIN + DASHBOARD) ===== */
+.login-container {
+    background: white;
+    padding: 35px;
+    width: 320px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* ===== HEADING ===== */
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+/* ===== INPUT FIELDS ===== */
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+}
+
+/* ===== COMMON BUTTON STYLE ===== */
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+/* ===== DASHBOARD BUTTON COLORS ===== */
+.login-container button:nth-child(2) {
+    background: #28a745; /* Green */
+}
+
+.login-container button:nth-child(3) {
+    background: #17a2b8; /* Blue */
+}
+
+.login-container button:nth-child(4) {
+    background: #ffc107; /* Yellow */
+    color: black;
+}
+
+.login-container button:nth-child(5) {
+    background: #dc3545; /* Red */
+}
+
+/* ===== LOGIN BUTTON (first button page) ===== */
+.login-container button:first-of-type {
+    background: linear-gradient(to right, #11998e, #38ef7d);
+}
+
+/* ===== HOVER EFFECT ===== */
+.login-container button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+/* TABLE DESIGN */
+.attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.attendance-table th,
+.attendance-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.attendance-table th {
+    background: #f4f4f4;
+    font-weight: bold;
+}
+
+/* STATUS COLORS */
+.present {
+    color: green;
+    font-weight: bold;
+}
+
+.absent {
+    color: red;
+    font-weight: bold;
+}
+/* QR BOX */
+.qr-box {
+    width: 150px;
+    height: 150px;
+    border: 2px dashed #bbb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    color: #777;
+    font-size: 14px;
+}
