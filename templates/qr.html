@@ -2,16 +2,20 @@
 <html>
 <head>
     <title>QR Code</title>
-    <link rel="stylesheet" href="/static/style1.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='style1.css')}}">
+    
 </head>
 
 <body>
     <div class="login-container">
         <h2>QR Code</h2>
+        <h3>subject: {{subject}}</h3>
+        <p id="timer"></p>
 
         <!-- QR Placeholder -->
         <div class="qr-box">
-            <p>[ QR Image Placeholder ]</p>
+           <img src="{{ qr_image }}"
+        width="200">"
         </div>
 
         <p>Scan this QR to mark attendance</p>
@@ -21,5 +25,23 @@
             Back to Dashboard
         </button>
     </div>
+    <script>
+
+let timeLeft = 30;
+
+function updateTimer() {
+    document.getElementById("timer").innerText = "QR valid for: " + timeLeft + " sec";
+    
+    timeLeft--;
+
+    if (timeLeft < 0) {
+        location.reload();
+    }
+}
+
+setInterval(updateTimer, 1000);
+updateTimer();
+</script>
+</script>
 </body>
 </html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance Success</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .box {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            font-size: 30px;
+            color: green;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="box">
+    <h2>✅ Attendance marked</h2>
+    <p><b>{{ student_id }}</b> in <b>{{ subject }}</b></p>
+
+    <button onclick="window.location.href='/'">Go Back</button>
+</div>
+
+</body>
+</html>

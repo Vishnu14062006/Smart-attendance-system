@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body style="display:flex;justify-content:center;align-items:center;height:100vh;background:#eee;">
+
+<div style="background:white;padding:30px;border-radius:10px;">
+    <h2>Profile</h2>
+
+    <p>Name: {{ student.name }}</p>
+    <p>Gender: {{ student.gender }}</p>
+    <p>DOB: {{ student.dob }}</p>
+    <p>Register No: {{ student.reg_no }}</p>
+    <p>Program: {{ student.program }}</p>
+    <p>Semester: {{ student.semester }}</p>
+
+    <button onclick="window.location.href='/dashboard'">Back</button>
+</div>
+
+</body>
+</html>

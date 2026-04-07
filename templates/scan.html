@@ -12,10 +12,13 @@
     <div class="login-container">
         <h2>Scanner</h2>
         <p>Student ID / Scan Result:</p>
-        <input type="text" id="scanInput" placeholder="Simulate scanned ID here">
-        <br>
-        <!-- Calls JS function -->
-        <button onclick="markAttendance()">Mark Attendance</button>
+<form method="POST">
+    <input type="text" name="student_id" placeholder="Enter Student ID" required>
+    <input type="hidden" name="subject" value="{{subject}}">
+    <br><br>
+
+    <button type="submit">Mark Attendance</button>
+</form>
 
         <p id="message" style="font-weight: bold;"></p>
 
