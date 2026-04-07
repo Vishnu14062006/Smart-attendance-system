@@ -1,4 +1,6 @@
+
  # Smart Attendance System (QR Based)
+
 
 ## Description
 This project is a QR-based smart attendance system where students scan a dynamic QR code to mark attendance.
@@ -27,4 +29,8 @@ This project is a QR-based smart attendance system where students scan a dynamic
 4. Scan QR to mark attendance
 
 ## Author
+<<<<<<< HEAD
 Vishnu
+=======
+Vishnu
+>>>>>>> 3833937093f47ff5ba91c81fe7244335319984af
